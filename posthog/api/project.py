@@ -444,10 +444,10 @@ class ProjectViewSet(TeamAndOrgViewSetMixin, AccessControlViewSetMixin, viewsets
         """
 
         permissions: list = [
-            IsAuthenticated,
-            APIScopePermission,
-            PremiumMultiProjectPermissions,
-            *self.permission_classes,
+            # IsAuthenticated,
+            # APIScopePermission,
+            # PremiumMultiProjectPermissions,
+            # *self.permission_classes,
         ]
 
         # Return early for non-actions (e.g. OPTIONS)

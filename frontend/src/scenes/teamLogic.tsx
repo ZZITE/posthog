@@ -171,13 +171,13 @@ export const teamLogic = kea<teamLogicType>([
         hasOnboardedAnyProduct: [
             (selectors) => [selectors.currentTeam],
             (currentTeam): boolean => {
-                if (
-                    currentTeam &&
-                    !currentTeam.completed_snippet_onboarding &&
-                    !Object.keys(currentTeam.has_completed_onboarding_for || {}).length
-                ) {
-                    return false
-                }
+                // if (
+                //     currentTeam &&
+                //     !currentTeam.completed_snippet_onboarding &&
+                //     !Object.keys(currentTeam.has_completed_onboarding_for || {}).length
+                // ) {
+                //     return false
+                // }
                 return true
             },
         ],
